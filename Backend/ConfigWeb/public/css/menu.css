@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    /*font-family: "microsoft yahei ui";、*/
+}
+/*.ui-tabs-vertical { width: 55em; }*/
+/*.ui-tabs-vertical .ui-tabs-nav { float: left; width: 12em; }*/
+/*.ui-tabs-vertical .ui-tabs-nav li { clear: left; width: 100%; border-bottom-width: 1px !important; border-right-width: 0 !important; margin: 0 -1px .2em 0; }*/
+/*.ui-tabs-vertical .ui-tabs-nav li a { display:block; }*/
+/*.ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active { padding-bottom: 0; padding-right: .1em; border-right-width: 1px; }*/
+/*.ui-tabs-vertical .ui-tabs-panel { padding: 1em; float: right; width: 40em;}*/
+
+.head{
+    padding-left: 30px;
+    height: 60px;
+    background-image: -webkit-linear-gradient(left,#E4E6E8,#f9f9f9);
+    background-image: -moz-linear-gradient(left,#E4E6E8,#f9f9f9);
+    background-image: -ms-linear-gradient(left,#E4E6E8,#f9f9f9);
+    background-image: -o-linear-gradient(left,#E4E6E8,#f9f9f9);
+    font-size: 30px;
+    border-bottom:1px solid deepskyblue;
+}
+.head img{
+    margin-top: 5px;
+    margin-right: 20px;
+}
+.head .tLeft{
+    float: left;
+    width: 15%;
+    height: 49px;
+    color: #1885fa;
+    font-size: 20px;
+    /*background: rgba(228,230,232,1);*/
+    /*border-right: 2px solid #c2c4c5;*/
+    padding: 10px 30px;
+}
+.head .tRight{
+    border-right: 1px solid #d3d3d3;
+    margin-right: 20px;
+    height: 30px;
+    margin-top: 10px;
+}
+.head div span a{
+    float: left;
+    /*color: #ffffff;*/
+    font-size: .1em;
+    margin-right: 10px;
+    padding-bottom: 0;
+}
+#userName{
+    cursor: default;
+}
+#userName:hover,:focus{
+    text-decoration: none;
+}
+#login,#logout{
+    cursor: pointer;
+}
+#login:hover,:focus,
+#logout:hover,:focus{
+    cursor: pointer;
+    color: dimgray;
+}
+
+ul.menu{
+    background: rgba(228,230,232,1);
+    border: 0;
+    border-right: 2px solid #c2c4c5;
+    border-bottom: 2px solid #c2c4c5;
+    padding: 0;
+    float: left;
+    width: 100%;
+    /*height: 1000px;*/
+    border-radius: 0;
+}
+ul.menu li{
+    background: rgba(255,255,255,0);
+    border: 0;
+    margin: 0;
+    width: 100%;
+    list-style: none;
+}
+ul.menu li a{
+    width: 100%;
+    padding: 15px;
+    border-bottom: 1px solid #c2c4c5;
+    float: left;
+    font-size: 20px;
+    color: #000000;
+}
+ul.menu li a:focus{
+    cursor: pointer;
+    background-color: #d6d8d8;
+}
+ul.menu li span{
+    margin-right: 20px;
+    float: right;
+}
+/*#tabs div{*/
+    /*padding: 0;*/
+    /*width: 1500px;*/
+/*}*/
+#body{
+    position: absolute;
+    width: 1500px;
+    float: left;
+    left: 20%;
+    top: 100px;
+}
+.ui-tabs .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor,
+.ui-tabs .ui-tabs-nav li.ui-state-disabled .ui-tabs-anchor,
+.ui-tabs .ui-tabs-nav li.ui-tabs-loading .ui-tabs-anchor{
+    cursor: default;
+}
+.ui-tabs .ui-tabs-nav,
+.ui-tabs .ui-tabs-panel{
+    padding: 0;
+}
+/*.modal-content{*/
+    /*height: 270px;*/
+    /*width: 350px;*/
+/*}*/
+/*.modal-content ul li{*/
+    /*width: 50px;*/
+    /*height: 30px;*/
+    /*font-size: 10px;*/
+/*}*/
+/*.modal-header{*/
+    /*background-color: #d3d3d3;*/
+    /*padding: 0;*/
+    /*height: 30px;*/
+/*}*/
+/*.close{*/
+    /*width: 30px;*/
+    /*height: 30px;*/
+    /*color: #000000;*/
+/*}*/
+.u_logo{
+     background: url("/img/username.png") no-repeat;
+     padding: 10px 10px;
+     position: absolute;
+     top: 40px;
+     left: 10px;
+
+ }
+.p_logo{
+    background: url("/img/password.png") no-repeat;
+    padding: 10px 10px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.ipt{
+    border: 1px solid #d3d3d3;
+    padding: 5px 10px;
+    width: 290px;
+    border-radius: 4px;
+    padding-left: 35px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s
+}
+.ipt:focus{
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)
+}
+#contain{
+    height: 900px;
+    margin-bottom: 0;
+}
+#contain li a:hover{
+    background-color: #38444d;
+    color: white;
+    text-decoration: none;
+}
+#contain li a{
+    font-family: "Microsoft YaHei", "微软雅黑", Arial, Helvetica, sans-serif;
+    font-size: 24px;
+}
+#contain li .bg-color{
+    background-color: #38444d;
+    color: white;
+}

@@ -1,0 +1,30 @@
+extend ../layout
+
+block content
+
+  div#tabMeeting(role='tabpanel')
+    div(id="tabShow",style="display:none")= tab
+    ul.nav.nav-tabs(role="tablist")
+      li(role="presentation")
+        a#list(href="#meetingList",aria-controls="list", role="tab", data-toggle="tab") 预约会议
+    div.tab-content.tabWhite
+      div.tab-pane.active(role="tabpanel", id="meetingList")
+        div.panel.panel50
+          button.btn.btn-primary 新建
+        div#tree
+        p
+          input(type="button" onclick="if(tv.selected)tv.selected.remove()" value="删除选中节点")
+          input(type="button" onclick="add()" value="增加节点")
+          input(type="button" onclick="if(tv.selected){tv.selected.edit();}" value="编辑节点")
+          input(type="button" onclick="save()" value="保存")
+  block script
+    script(src="/js/meetingModel/paint.js",type="text/javascript")
+    script(src="/js/meetingModel/add.js",type="text/javascript")
+
+
+
+
+
+
+
+

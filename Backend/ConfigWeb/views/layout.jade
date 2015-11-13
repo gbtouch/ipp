@@ -1,0 +1,102 @@
+doctype html
+html
+  head
+    meta(name='renderer' content='webkit')
+    meta(http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1")
+    title 虹口法院
+    link(rel="stylesheet", href="/css/jquery-ui.min.css")
+    link(rel='stylesheet', href='/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/css/style.css')
+    link(rel='stylesheet', href='/css/menu.css')
+    link(rel='stylesheet', href='/css/modal.css')
+    script(type='text/javascript',src='/js/jquery-2.1.4.min.js')
+    //script(type='text/javascript',src='/js/jquery-ui.min.js')
+    //script(type='text/javascript',src='/js/jquery.uploadFile/jquery.ui.widget.js')
+    //script(type='text/javascript',src='/js/bootstrap.min.js')
+    //script(type='text/javascript',src='/js/underscore-min.js')
+    //script(type='text/javascript',src='/js/common.js')
+    block script
+  body
+    div#userModal.modal.fade(tabindex='-1',role='dialog', aria-labelledby="attendeesLabel",aria-hidden="true")
+      div.modal-dialog
+        div.modal-content
+          div.modal-header
+            button.close(data-dismiss="modal")
+              span(aria-hidden='true') &times;
+              span.sr-only Close
+            h4#attendeesLabel.modal-title-lg 用户信息
+          //div.modal-body
+          //  div.input-group(style="margin-bottom:15px")
+          //    span= "  账号：  " + user.account
+          //  div.input-group(style="margin-bottom:15px")
+          //    span= "  姓名：  " + user.name
+          //  div.input-group(style="margin-bottom:15px")
+          //    span= "  单位：  " + user.unit
+          //  div.input-group(style="margin-bottom:15px")
+          //    span= "  职务：  " + user.position
+          //  div.input-group(style="margin-bottom:15px")
+          //    if user.role == 'manager'
+          //      span 角色：  会务管理
+          //    else if user.role == 'attendees'
+          //      span 角色：  参会人员
+          //    else
+          //      span 角色：  用户管理员
+
+
+          div.modal-footer
+            button.btn.btn-default(data-dismiss="modal") 关闭
+            //button.btn.btn-primary(id="save") 保存
+
+    div.container-fluid
+      div.row
+        div.logobg.logo
+          img(src="/img/logo.png" height="50px")
+          //ul.navbar-nav.nav.navbar-left.pull-right(style='margin-right:50px;')
+          //    div.navbar-brand.navbarnav(data-toggle='modal',data-target='#userModal',data-backdrop='static', style='color:white;cursor:pointer;')
+          //      span.glyphicon.glyphicon-user
+          //      = ' '+ user.name
+          //    div.navbar-brand.navbarn(onclick="location.href='/login'", style='color:white;cursor:pointer;')
+          //      i.glyphicon.glyphicon-log-out
+          //      | 注销
+          //div.tLeft
+          //img(src="/img/gbtouch.jpg" width="40" height="40")
+              //b SHGBIT
+          //div.tRight(style="float: right")
+          //  span
+          //    a#userName(style="font-size: 25px") admin
+          //  span
+          //    a#login(style="margin-top: 15px" data-toggle="modal" data-target="#myModal" data-backdrop="static") 登录
+          //       span
+          //    a#logout(style="margin-top: 15px" data-toggle="modal" data-target="#myModal" data-backdrop="static") 注销
+        div.col-sm-2.mp0
+          ul.menu#contain
+            //if user.name != "用户管理员"
+            li
+              a#meeting(href="/meeting") 会议
+              //li
+              //  a(href="" style="font-size: 10px;padding-left:30px") 议程控制
+              //li
+              //  a(href="" style="font-size: 10px;padding-left:30px") 文稿
+              //li
+              //  a(href="" style="font-size: 10px;padding-left:30px") 批注
+              //li
+              //  a(href="/users" style="font-size: 10px;padding-left:30px") 主持人
+              //li
+                a(href="") 资料库
+              //li
+                a(href="") 会议室
+              li
+                a#device(href="/device") 终端
+                //li
+                  a(href="") 消息
+                //li
+                //  a(href="") 服务
+              li
+                a#vote(href="/vote") 合议
+            //if user.role == "manager" || user.role == "用户管理员"
+            //  li
+            //    a#attendees(href="/attendees") 人员库
+        div.col-sm-10(style="margin:15px 0 50px 0")
+            block content
+      //div.row
+      //  div.nav.navbar.navbar-default.navbar-fixed-bottom.footer Copyright 上海金桥信息股份有限公司 2010 沪ICP备09095147号
