@@ -39,7 +39,7 @@
     "filePort":"10086",
     "meetingPort":"10011",
     "votePort":"10017",
-    "webPort":"3001",
+    "webPort":"80",
     "devicePort":"10018",
     "attendeesPort":"10019",
     "controlPort":"10016",
