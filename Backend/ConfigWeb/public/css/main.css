@@ -1,0 +1,374 @@
+﻿/****
+Normal
+****/
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font: 12px/1.6 arial,"Hiragino Sans GB",SimSun,sans-serif;
+}
+
+a {
+    cursor: pointer;
+}
+
+h1,h3,h2 {
+    font-family: SimHei;
+    font-weight: bold;
+}
+
+h4 {
+    margin: 30px 0;
+    color: #66595C;
+}
+
+h5 {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    color: #555;
+}
+
+.btn-info {
+    color: #6BA442 !important;
+    background-color: transparent !important;
+    border-color: #89B668 !important;
+    border-width: 2px;
+    box-shadow: none !important;
+    padding: 5px 11px 4px;
+    min-width: 100px;
+    min-height: 40px;
+
+}
+
+.btn-info:focus,.btn-info.active, .btn-info:hover {
+    color: #507B32 !important;
+    background-color: #ECF4E7!important;
+    border-color: #5F923B !important;
+    box-shadow: none !important;
+}
+
+.btn-danger{
+    color: #EC6363 !important;
+    background-color: transparent !important;
+    border-color: #EC6363 !important;
+    border-width: 2px;
+    box-shadow: none;
+    padding: 5px 11px 4px;
+    min-width: 100px;
+    min-height: 40px;
+}
+
+.btn-danger:focus,.btn-danger.active, .btn-danger:hover {
+    color: #F53F44 !important;
+    background-color: rgb(248, 217, 217) !important;
+    border-color: #F84444 !important;
+    box-shadow: none !important;
+}
+
+.btn-primary{
+    color: #61A3F8 !important;
+    background-color: transparent !important;
+    border-color: #AAC1F8 !important;
+    border-width: 2px;
+    box-shadow: none;
+    padding: 5px 11px 4px;
+    min-width: 100px;
+    min-height: 40px;
+}
+
+.btn-primary:focus,.btn-primary.active, .btn-primary:hover {
+    color: #437DD4 !important;
+    background-color: #E1EAFC !important;
+    border-color: #5C9DFF !important;
+    box-shadow: none !important;
+}
+
+.btn-default {
+    min-width: 100px;
+    min-height: 40px;
+}
+
+.btn-default:focus,.btn-default.active, .btn-default:hover {
+    color: #7B5A5A  !important;
+}
+
+.alert-danger{
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 5px;
+    font-size: 16px;
+}
+
+/******
+layout.html
+*******/
+.app-feature {
+    background-image:url("images/mms.jpg");
+    background-position: right center;
+    height: 320px;
+}
+
+.app-font {
+    padding-top: 60px;
+    color: #ffffff;
+}
+
+.app-body {
+    height: 200px;
+    margin-top: 50px
+}
+
+.app-image {
+    margin-top: 45px;
+}
+
+/******
+background.html
+*******/
+.dashed{
+    border: 3px dashed #C0C0C0;
+    height: 200px;
+    width: 831px;
+    text-align: center;
+    color: #C0C0C0;
+    margin: auto;
+}
+
+.backgroundbody {
+    padding-top: 100px;
+}
+
+.boderheader {
+    border-bottom: 1px solid #EBEBED;
+    overflow: auto;
+    color: #3C3C3C;
+    margin-bottom: 70px;
+}
+
+.backgroundbody ol {
+    list-style: outside none none;
+}
+
+.backgroundbody ol li {
+    width: 250px;
+    padding-left: 60px;
+    display: inline;
+    float: left;
+    height: 46px;
+    line-height: 46px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #999;
+    font-family: "微软雅黑","华文细黑","黑体",arial;
+}
+
+.backgroundbody ol li.active {
+    color: #3E3E3E;
+    border-bottom: 2px solid #FF4700;
+}
+
+.backgroundbody ol li i {
+    display: inline-block;
+    margin-right: 5px;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    font-style: normal;
+    line-height: 24px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFF;
+    background: url("images/ico-circle2.png") no-repeat scroll 0 0 transparent;
+}
+
+.backgroundbody ol li.active i {
+    background-image: url("images/ico-circle1.png");
+}
+
+.steps-nav {
+    margin-top: 35px;
+    padding: 20px 0;
+    overflow: auto;
+    border-top: 1px solid #EBEBED;
+}
+
+.steps-nav .btn {
+    min-width: 110px;
+}
+
+.btn-default {
+    background: none repeat scroll 0% 0% rgba(255, 255, 255, 0.5);
+    border-color: #DEE0E3;
+    color: #494747;
+}
+
+.guide-header {
+    position: relative;
+    height: 20px;
+}
+
+/******
+resource.html
+*******/
+.box-header {
+    color: #000;
+    background: none repeat scroll 0px center transparent;
+    border-bottom: 1px solid #E6E6E6;
+    margin: 0 auto;
+    min-height: 540px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    max-width: 1000px;
+}
+
+.table tr {
+    font-size:16px;
+    font-weight:bold;
+}
+
+.table tbody tr td {
+    height: 65px;
+    vertical-align: middle;
+}
+
+.modal-form {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.input-group-addon{
+    min-width: 100px;
+}
+
+/******
+main.html
+*******/
+.wrapper {
+    width: 860px;
+    margin: 10px auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    overflow: hidden;
+}
+
+.wrapper.no-pad {
+    padding-left: 18px;
+    padding-right: 0px;
+}
+
+.top-bar {
+    text-align: left;
+    padding: 5px 0px;
+    background-color: #584B4F;
+    color: #EFEAE1;
+    font-size: 14px;
+    height: 60px;
+}
+
+.top-bar h3{
+    color: #66595C;
+}
+
+.navigation {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    text-align: left;
+    color: #EFEAE1;
+    font-size: 16px;
+    display: inline-block;
+}
+
+.navigation li {
+    display: inline-block;
+    padding-right: 5px;
+    height: 33px;
+    vertical-align: top;
+}
+
+.navigation a {
+    padding: 5px;
+    display: inline-block;
+    transition: color 0.2s ease 0s;
+}
+
+.top-bar a{
+    color: #EFEAE1;
+    text-decoration: none;
+}
+
+.top-bar a:hover {
+    color: #81C08B;
+}
+
+.top-bar .top-bar-right {
+    float: right;
+    line-height: 33px;
+    font-size: 16px;
+    margin: 0 10px;
+}
+
+.logo-header {
+    display: block;
+    width: 200px;
+    height: 120px;
+    line-height: 0;
+    color: #66595C;
+    text-decoration: none;
+    text-indent: 230px;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0 auto;
+    background-image: url("images/applogo.png");
+}
+
+/******
+templet.html
+*******/
+
+.canvas-border {
+    margin-top: 40px;
+}
+
+
+.radio-inline h4 {
+    margin: 0;
+}
+
+.styled-select {
+    background: url(images/arrow96.png) no-repeat 96% 0;
+    height: 29px;
+    overflow: hidden;
+    width: 240px;
+}
+
+.styled-select select {
+    background: transparent;
+    border: none;
+    font-size: 14px;
+    height: 29px;
+    padding: 5px; /* If you add too much padding here, the options won't show in IE */
+    width: 268px;
+}
+
+.styled-select.slate {
+    background: url(images/arrow.jpg) no-repeat right center;
+    height: 34px;
+    width: 200px;
+}
+
+.styled-select.slate select {
+    border: 1px solid #ccc;
+    font-size: 16px;
+    height: 34px;
+    width: 268px;
+}
+
+.form-control::-webkit-input-placeholder { font-style:italic; }
+.form-control:-moz-placeholder { font-style:italic; }
+.form-control::-moz-placeholder { font-style:italic; }
+.form-control:-ms-input-placeholder { font-style:italic; }

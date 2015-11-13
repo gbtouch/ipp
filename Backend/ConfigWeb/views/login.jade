@@ -1,0 +1,42 @@
+doctype html
+html
+  head
+    meta(name='renderer' content='webkit')
+    meta(http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1")
+    title 安徽国投无纸化系统
+    link(rel="stylesheet", href="/css/jquery-ui.min.css")
+    link(rel='stylesheet', href='/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/css/style.css')
+    link(rel='stylesheet', href='/css/menu.css')
+    link(rel='stylesheet', href='/css/login.css')
+    block style
+    script(type='text/javascript',src='/js/jquery-2.1.4.min.js')
+    //script(type='text/javascript',src='/js/jquery-2.1.4.min.map')
+    //script(type='text/javascript',src='/js/jquery-ui.min.js')
+    script(type='text/javascript',src='/js/jquery.uploadFile/jquery.ui.widget.js')
+    script(type='text/javascript',src='/js/bootstrap.min.js')
+    script(type='text/javascript',src='/js/underscore-min.js')
+    //script(type='text/javascript',src='/js/underscore-min.map')
+    //script(type='text/javascript',src='/js/filesize.min.js')
+    script(type='text/javascript',src='/js/common.js')
+    //script(type='text/javascript',src='/js/page.js')
+    block script
+  body
+    div
+      div.logobg.logo
+        img(src="/img/logo.png" height="50px")
+    div.login.col-sm-offset-4.col-sm-4
+      div.title
+        b 登 录
+      form.form(method="post",action='/login')
+        div.form-group(style="padding: 30px 0px 10px 0px;position: relative;")
+          span.glyphicon.glyphicon-user.u-icon
+          input.ipt#name(type="text" placeholder="用户名" name="name")
+        div.form-group(style="position: relative;")
+          span.glyphicon.glyphicon-asterisk.p-icon
+          input#password.ipt(type="password"  placeholder="密码" name="password")
+          if (error)
+            div(align="middle")= error
+        input.load.btn.btn-primary(type="submit" value="登  录")
+    div
+      div.nav.navbar.navbar-default.navbar-fixed-bottom.footer Copyright 上海金桥信息股份有限公司 2010 沪ICP备09095147号
