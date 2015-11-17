@@ -1,24 +1,9 @@
 var express = require('express');
 var router = express.Router();
-var M = require('../models/meeting');
-var formidable = require('../utils/formidableUpload');
-var filesize = require('filesize');
 var uuid = require('uuid');
-var Member = require('../models/attendees');
 var client = requestClient.createClient('http://'+config.goServer+':'+config.meetingPort);
 var clientFile = requestClient.createClient('http://'+config.fileServer+':'+config.filePort);
 var clientVote = requestClient.createClient('http://'+config.goServer+':'+config.votePort);
-//var clientFile = requestClient.createClient('http://127.0.0.1:10020');
-
-//router.all('*', checkLogin);
-
-//function checkLogin(req, res, next) {
-//  if (!req.session.user){
-//    res.redirect('/login')
-//  } else {
-//    next();
-//  }
-//}
 
 router.get('/', function(req, res, next) {
   var tab = req.query.tab;
@@ -31,15 +16,6 @@ router.get('/', function(req, res, next) {
       meetings = meetings.sort(function(a,b){
         return a.starttime < b.starttime;
       });
-//      if(req.session.user.role == 'attendees'){
-//        meetings = _.filter(meetings, function(item){
-//          if (_.find(item.member, function(each){ return each.id == req.session.user.id;})){
-//            return true;
-//          }else{
-//            return false;
-//          }
-//        })
-//      }
     }
     client.get('/v1/current', function(err, resp, current) {
       if (err) {

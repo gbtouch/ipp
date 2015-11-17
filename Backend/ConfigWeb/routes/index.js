@@ -1,5 +1,4 @@
 var express = require('express');
-var Model = require('../models/attendees');
 var router = express.Router();
 
 /* GET home page. */
